@@ -91,7 +91,8 @@ body {
   justify-content: right;
   align-items: center;
   font-size: 1.75rem;
-  background: rgba(0, 0, 0, .8);
+  /* background: rgba(0, 0, 0, .8); */
+  background: linear-gradient(.25turn, black, 60%, rgb(80, 80, 80));
   width: 100%;
   padding: 0;
   padding-right: 2rem;
