@@ -1,0 +1,29 @@
+@font-face {
+  font-family: roboto;
+  src: url('./fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: bitstream;
+  src: url('./fonts/Bitstream-Vera-Sans-Mono/VeraMono.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#header {
+  font-family: bitstream;
+  color: #57ACF7;
+  background-color: black;
+  padding: 1rem 4rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+ h3 {
+  color: #A2D0F9;
+  font-size: 1.5rem;
+  font-family: roboto;
+ }
