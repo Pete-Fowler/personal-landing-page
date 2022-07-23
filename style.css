@@ -8,6 +8,37 @@
   src: url('./fonts/ubuntu-mono/UbuntuMono-B.ttf');
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: roboto;
@@ -15,6 +46,21 @@
 
 body {
   margin: 0px;
+}
+
+#background {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./images/pexels-mikhail-nilov-8108726.jpg');
+  background-size: cover;
+}
+
+.transparent {
+  width: 100vw;
+  height: 80vh;
+  opacity: 0;
 }
 
 #header {
@@ -55,6 +101,7 @@ button:hover {
 }
 
 h1 {
+  animation: 1.7s ease-out 0s 1 slideInFromLeft;
   font-family: ubuntu-mono;
   color: #57ACF7;
   font-size: 7rem;
@@ -62,6 +109,8 @@ h1 {
 }
 
 h2 {
+  animation: 1.7s ease-out 1.2s 1 slideInFromRight;
+  animation-fill-mode: backwards;
   font-size: 3.5rem;
   position: relative;
   left: 1rem;
@@ -70,6 +119,8 @@ h2 {
  h3 {
   font-size: 1.7rem;
   font-family: roboto;
+  animation: 1.7s ease-in 2.4s 1 fadeIn;
+  animation-fill-mode: backwards;
  }
 
 #projects {
@@ -77,6 +128,7 @@ h2 {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 3rem;
+  background: whitesmoke;
 }
 
  #projects-card {
