@@ -18,17 +18,26 @@ body {
 
 #header {
   font-family: ubuntu-mono;
-  color: #57ACF7;
-  background-color: black;
+  color: #A2D0F9;
+  background: linear-gradient(rgb(80, 80, 80), 10%, black, 90%, rgb(80, 80, 80));
+  height: 100vh;
   padding: 1rem 4rem;
 }
 
 h1 {
-  font-size: 6rem;
+  color: #57ACF7;
+  font-size: 7rem;
   font-weight: 900;
+  /* margin: 1rem 0rem; */
 }
+
+h2 {
+  font-size: 3.5rem;
+  position: relative;
+  left: 1rem;
+}
+
  h3 {
-  color: #A2D0F9;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: roboto;
  }
