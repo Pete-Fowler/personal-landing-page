@@ -59,7 +59,7 @@ body {
 
 .transparent {
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   opacity: 0;
 }
 
@@ -73,6 +73,8 @@ body {
   width: 100%;
   padding: 0;
   padding-right: 2rem;
+  animation: 2s ease-in 4s 1 fadeIn;
+  animation-fill-mode: backwards;
 }
 
 .button {
@@ -101,7 +103,7 @@ button:hover {
 }
 
 h1 {
-  animation: 1.7s ease-out 0s 1 slideInFromLeft;
+  animation: 2s ease-out 0s 1 slideInFromLeft;
   font-family: ubuntu-mono;
   color: #57ACF7;
   font-size: 7rem;
@@ -109,7 +111,7 @@ h1 {
 }
 
 h2 {
-  animation: 1.7s ease-out 1.2s 1 slideInFromRight;
+  animation: 2s ease-out 1.5s 1 slideInFromRight;
   animation-fill-mode: backwards;
   font-size: 3.5rem;
   position: relative;
@@ -119,7 +121,7 @@ h2 {
  h3 {
   font-size: 1.7rem;
   font-family: roboto;
-  animation: 1.7s ease-in 2.4s 1 fadeIn;
+  animation: 2s ease-in 3s 1 fadeIn;
   animation-fill-mode: backwards;
  }
 
