@@ -10,6 +10,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: roboto;
 }
 
 body {
@@ -17,7 +18,37 @@ body {
 }
 
 #header {
-  font-family: ubuntu-mono;
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: white;
+  font-size: 1.75rem;
+  background: rgba(0, 0, 0, .8);
+  width: 100%;
+  padding: 0;
+  padding-right: 2rem;
+}
+
+.button {
+  font-size: 1.25rem;
+  font-weight: 700;
+  appearance: none;
+  height: 100%;
+  width: 100px;
+  border: none;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  padding: .5rem 0rem;
+}
+
+button:hover {
+  color: black;
+  background:rgb(255, 255, 255, .8);
+  transition: .4s;
+}
+
+#main {
   color: #A2D0F9;
   background: linear-gradient(rgb(80, 80, 80), 10%, black, 90%, rgb(80, 80, 80));
   height: 100vh;
@@ -25,10 +56,10 @@ body {
 }
 
 h1 {
+  font-family: ubuntu-mono;
   color: #57ACF7;
   font-size: 7rem;
   font-weight: 900;
-  /* margin: 1rem 0rem; */
 }
 
 h2 {
@@ -40,4 +71,26 @@ h2 {
  h3 {
   font-size: 1.7rem;
   font-family: roboto;
+ }
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+ #projects-card {
+  color: #A2D0F9;
+  font-size: 2rem;
+  font-weight: 700;
+ }
+
+ .card {
+  width: 100%;
+  max-width: 375px;
+  height: 375px;
+  border: 2px solid #57ACF7;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 8px gray;
  }
