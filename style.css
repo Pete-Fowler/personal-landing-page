@@ -22,7 +22,6 @@ body {
   display: flex;
   justify-content: right;
   align-items: center;
-  color: white;
   font-size: 1.75rem;
   background: rgba(0, 0, 0, .8);
   width: 100%;
@@ -37,20 +36,20 @@ body {
   height: 100%;
   width: 100px;
   border: none;
-  color: white;
+  color: #A2D0F9;
   background: rgba(0, 0, 0, 0);
   padding: .5rem 0rem;
 }
 
 button:hover {
   color: black;
-  background:rgb(255, 255, 255, .8);
+  background: #A2D0F9;
   transition: .4s;
 }
 
 #main {
   color: #A2D0F9;
-  background: linear-gradient(rgb(80, 80, 80), 10%, black, 90%, rgb(80, 80, 80));
+  background: linear-gradient(.25turn, black, 60%, rgb(80, 80, 80));
   height: 100vh;
   padding: 1rem 4rem;
 }
