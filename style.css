@@ -73,7 +73,7 @@ body {
   width: 100%;
   padding: 0;
   padding-right: 2rem;
-  animation: 2s ease-in 4s 1 fadeIn;
+  animation: 2s ease-in 3s 1 fadeIn;
   animation-fill-mode: backwards;
 }
 
