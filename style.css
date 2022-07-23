@@ -8,10 +8,21 @@
   src: url('./fonts/ubuntu-mono/UbuntuMono-B.ttf');
 }
 
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-33%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-15%);
   }
   100% {
     transform: translateX(0);
@@ -21,11 +32,22 @@
 
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(25%);
     opacity: 0;
   }
   100% {
-    transform: translate(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(33%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -73,7 +95,7 @@ body {
   width: 100%;
   padding: 0;
   padding-right: 2rem;
-  animation: 2s ease-in 3s 1 fadeIn;
+  animation: 2s ease-in 1.5s 1 fadeIn;
   animation-fill-mode: backwards;
 }
 
@@ -103,7 +125,7 @@ button:hover {
 }
 
 h1 {
-  animation: 2s ease-out 0s 1 slideInFromLeft;
+  animation: 2s ease-out 0s 1 slideInFromTop;
   font-family: ubuntu-mono;
   color: #57ACF7;
   font-size: 7rem;
@@ -111,7 +133,7 @@ h1 {
 }
 
 h2 {
-  animation: 2s ease-out 1.5s 1 slideInFromRight;
+  animation: 2s ease-out .75s 1 slideInFromLeft;
   animation-fill-mode: backwards;
   font-size: 3.5rem;
   position: relative;
@@ -121,7 +143,7 @@ h2 {
  h3 {
   font-size: 1.7rem;
   font-family: roboto;
-  animation: 2s ease-in 3s 1 fadeIn;
+  animation: 2s ease-in 1.5s 1 slideInFromBottom;
   animation-fill-mode: backwards;
  }
 
