@@ -91,12 +91,11 @@ body {
   justify-content: right;
   align-items: center;
   font-size: 1.75rem;
-  /* background: rgba(0, 0, 0, .8); */
   background: linear-gradient(.25turn, black, 60%, rgb(80, 80, 80));
   width: 100%;
   padding: 0;
   padding-right: 2rem;
-  animation: 2s ease-in 1.5s 1 fadeIn;
+  animation: 2s ease-in 1s 1 fadeIn;
   animation-fill-mode: backwards;
 }
 
@@ -134,7 +133,7 @@ h1 {
 }
 
 h2 {
-  animation: 2s ease-out .75s 1 slideInFromLeft;
+  animation: 2s ease-out .5s 1 slideInFromLeft;
   animation-fill-mode: backwards;
   font-size: 3.5rem;
   position: relative;
@@ -144,7 +143,7 @@ h2 {
  h3 {
   font-size: 1.7rem;
   font-family: roboto;
-  animation: 2s ease-in 1.5s 1 slideInFromBottom;
+  animation: 2s ease-in 1s 1 slideInFromBottom;
   animation-fill-mode: backwards;
  }
 
