@@ -140,7 +140,7 @@ h2 {
   left: 1rem;
 }
 
- h3 {
+h3 {
   font-size: 1.7rem;
   font-family: roboto;
   animation: 2s ease-in 1s 1 slideInFromBottom;
@@ -171,12 +171,34 @@ h2 {
  }
 
  #bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: black;
   color: #A2D0F9;
   width: 100%;
   min-height: 80vh;
+  padding: 2rem;
  }
 
  #text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 70vw;
+  padding: 2rem;
+  border: 2px solid #57ACF7;
+  border-radius: 10px;
+ }
 
+ #bio h3 {
+  font-size: 2rem;
+  margin: 16px;
+  animation: none;
+ }
+
+ #bio p {
+  font-size: 1.2rem;
  }
