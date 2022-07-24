@@ -68,6 +68,8 @@
 
 body {
   margin: 0px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 #background {
@@ -177,7 +179,7 @@ h3 {
   background: black;
   color: #A2D0F9;
   width: 100%;
-  min-height: 80vh;
+  min-height: 60vh;
   padding: 2rem;
  }
 
@@ -201,4 +203,38 @@ h3 {
 
  #bio p {
   font-size: 1.2rem;
+ }
+
+ #links-contact {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  background: whitesmoke;
+  min-height: 60vh;
+ }
+
+#links-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: 2rem 0rem;
+}
+
+#links-box h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  animation: none;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+ #links img {
+  width: 75px;
  }
