@@ -41,21 +41,20 @@
       <p>I love building things, and the challenges and ongoing learning required in this field. I am currently focusing on full stack software engineering through the Flatiron School. I've built strong problem solving, communication, and collaboration skills through teaching myself web development fundamentals, plus previous experience in music, journalism, private investigation, and healthcare. I am a dedicated rock climber and runner from Colorado.</p>
     </div>
   </div>
-  <div id="links-contact">
-    <h3>Links</h3>
-    <div id="links">
+  <div id="links">
+    <h3 id="links-h">Links</h3>
+    <div id="icons">
       <a href="https://github.com/Pete-Fowler">
-        <img src="./images/GitHub-Mark-120px-plus.png" alt="Github">
-      </a>
+        <img src="./images/GitHub-Mark-120px-plus.png" alt="Github"></a>
       <a href="https://www.linkedin.com/in/pete-fowler/">
-        <img src="./images/LI-In-Bug.png" alt="LinkedIn">
-      </a>
+        <img src="./images/LI-In-Bug.png" alt="LinkedIn"></a>
     </div>
-    <h3>Contact</h3>
+  </div>
+  <div id="contact">
+    <h3 id="contact-h">Contact</h3>
     <form action="mailto:fowler.pete@gmail.com" method="get" enctype="application/x-www-form-urlencoded">
-      <input type="text" name="name" id="name" placeholder="Name">
-      <textarea name="comments" rows="12" cols="35" placeholder="Comments">
-      </textarea>
+      <input type="text" name="name" id="name" minlength='2' maxlength='30' placeholder="Name">
+      <textarea name="comments" rows="5" cols="50" minlength='10' maxlength='350' placeholder="Comments"></textarea>
       <input type="submit" name="submit" value="Send">
       <input type="reset" name="reset" value='Clear Form'>
     </form>
