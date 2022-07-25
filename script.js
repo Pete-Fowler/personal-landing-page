@@ -1,3 +1,4 @@
+// Header nav button scroll functionality
 const topBtn = document.querySelector('#top-btn');
 topBtn.addEventListener('click', () => {
   document.getElementById("main").scrollIntoView({behavior: 'smooth'})});
