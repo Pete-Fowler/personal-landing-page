@@ -11,10 +11,11 @@
 <body>
   <div id="background"></div>
   <div id="header">
-    <button class="button">Top</button>
-    <button class="button">Projects</button>
-    <button class="button">Bio</button>
-    <button class="button">Contact</button>
+    <button id='top-btn' class="nav-btn">Top</button>
+    <button id='projects-btn' class="nav-btn">Projects</button>
+    <button id='bio-btn' class="nav-btn">Bio</button>
+    <button id='links-btn' class="nav-btn">Links</button>
+    <button id='contact-btn' class="nav-btn">Contact</button>
   </div>
   <div id="main">
     <h1>Pete Fowler</h1>
@@ -52,10 +53,7 @@
   </div>
   <div id="contact">
     <h3 id="contact-h">Contact</h3>
-    <form action="mailto:fowler.pete@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" id="name" minlength='2' maxlength='30' placeholder="Name">
-      <textarea name="comments" rows="5" cols="50" minlength='10' maxlength='350' placeholder="Comments"></textarea>
-      <input type="submit" name="submit" value="Submit">
+    <p>fow<!--abc@def.com-->ler.pe<!--@abc.com-->te@<!--pete@abcdef.com-->gmail.com</p>
     </form>
   </div>
   <div class="transparent"></div>

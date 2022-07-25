@@ -101,7 +101,7 @@ body {
   animation-fill-mode: backwards;
 }
 
-.button {
+.nav-btn {
   font-size: 1.25rem;
   font-weight: 700;
   appearance: none;
@@ -113,7 +113,7 @@ body {
   padding: .5rem 0rem;
 }
 
-button:hover {
+.nav-btn:hover {
   color: black;
   background: #A2D0F9;
   transition: .4s;
@@ -215,7 +215,7 @@ h3 {
   color: black;
   background: whitesmoke;
   min-height: 40vh;
-  margin: 10rem 0rem;
+  margin: 10rem 0rem 0rem 0rem;
  }
 
 #links h3 {
@@ -237,17 +237,6 @@ h3 {
 
 #contact h3 {
   animation: none;
-}
-
- form {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  padding: 1rem;
-  max-width: 75%;
-  margin-bottom: 2rem;
- }
-
-textarea {
-  resize: none;
+  font-size: 2rem;
+  margin-bottom: .5rem;
 }
