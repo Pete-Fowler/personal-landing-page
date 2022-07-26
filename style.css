@@ -99,6 +99,7 @@ body {
   padding-right: 2rem;
   animation: 2s ease-in 1s 1 fadeIn;
   animation-fill-mode: backwards;
+  z-index: 1;
 }
 
 .nav-btn {
@@ -163,18 +164,24 @@ h3 {
   font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
+  justify-content: start;
  }
 
  #projects-card h3 {
   animation: none;
+  color: #57ACF7;
  }
 
  .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: linear-gradient(.25turn, black, 60%, rgb(80, 80, 80));
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #57ACF7;
   width: 100%;
   max-width: 375px;
   height: 250px;
@@ -186,6 +193,7 @@ h3 {
  .card:hover {
   transform: scale(1.3);
   transition: .6s;
+  z-index: 1;
  }
 
  .card img {
@@ -194,6 +202,12 @@ h3 {
  }
 
  .card a {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   color: #57ACF7;
   font-size: 1.7rem;
   font-weight: 700;
