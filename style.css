@@ -225,7 +225,7 @@ h3 {
   padding: 2rem;
  }
 
- #text {
+ #bio-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,6 +236,14 @@ h3 {
   border: 2px solid #57ACF7;
   border-radius: 10px;
  }
+
+#portrait {
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  border-radius: 50%;
+  float: right;
+} 
 
  #bio h3 {
   font-size: 2rem;
