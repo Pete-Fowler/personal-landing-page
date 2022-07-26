@@ -152,6 +152,7 @@ h3 {
 #projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   padding: 3rem;
   background: whitesmoke;
@@ -164,12 +165,34 @@ h3 {
  }
 
  .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(.25turn, black, 60%, rgb(80, 80, 80));
   width: 100%;
   max-width: 375px;
-  height: 375px;
+  height: 250px;
   border: 2px solid #57ACF7;
   border-radius: 1rem;
   box-shadow: 4px 4px 8px gray;
+ }
+
+ .card:hover {
+  transform: scale(1.6);
+  transition: .6s;
+ }
+
+ .card img {
+  width: 100%;
+  padding: 10px;
+ }
+
+ .card a {
+  color: #57ACF7;
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: roboto;
  }
 
  #bio {
