@@ -160,8 +160,13 @@ h3 {
 
  #projects-card {
   color: #A2D0F9;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  text-align: center;
+ }
+
+ #projects-card h3 {
+  animation: none;
  }
 
  .card {
