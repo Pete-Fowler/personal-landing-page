@@ -1,3 +1,3 @@
-This is a <a href="https://pete-fowler.github.io/personal-landing-page/">Developer landing page<a>
+This is a developer landing page at <a href="https://petefowler.dev">petefowler.dev<a>
 
 Background photo by Mikhail Nilov: https://www.pexels.com/photo/motherboard-behind-wire-mesh-8108726/
