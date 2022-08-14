@@ -23,15 +23,10 @@ contactBtn.addEventListener('click', () => {
 
 // Parallax scroll effect
 const background = document.querySelector('#background');
-const heroText = document.querySelectorAll('.scroll');
+
 const parallax = () => {
   const { scrollY } = window;
-  background.style.top = (scrollY * -.2) + 'px';
-  heroText.forEach(x => {
-    x.style.right = (scrollY * .6) + 'px';
-    x.style.top = (scrollY * .6) + 'px';
-  });
-
+  background.style.top = (scrollY * -.25) + 'px';
 }
 window.addEventListener('scroll', parallax)
 })();

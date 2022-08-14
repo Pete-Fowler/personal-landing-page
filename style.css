@@ -75,11 +75,12 @@ body {
 #background {
   position: fixed;
   z-index: -1;
-  min-width: 100vw;
-  height: 200vh;
+  width: 100vw;
+  height: 300vh;
   top: 800px;
   background-image: url('./images/pexels-mikhail-nilov-8108726.jpg');
   background-size: cover;
+  background-repeat: repeat-y;
 }
 
 .transparent {
