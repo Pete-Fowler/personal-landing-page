@@ -26,7 +26,7 @@ const background = document.querySelector('#background');
 
 const parallax = () => {
   const { scrollY } = window;
-  background.style.top = (scrollY * -.25) + 'px';
+  background.style.top = (scrollY * -.4) + 'px';
 }
 window.addEventListener('scroll', parallax)
 })();

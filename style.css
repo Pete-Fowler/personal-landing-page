@@ -8,6 +8,15 @@
   src: url('./fonts/ubuntu-mono/UbuntuMono-B.ttf');
 }
 
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
 @keyframes slideInFromTop {
   0% {
     opacity: 0;
@@ -52,15 +61,6 @@
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 * {
   box-sizing: border-box;
   font-family: roboto;
@@ -76,11 +76,9 @@ body {
   position: fixed;
   z-index: -1;
   width: 100vw;
-  height: 300vh;
-  top: 800px;
+  height: 375vh;
   background-image: url('./images/pexels-mikhail-nilov-8108726.jpg');
   background-size: cover;
-  background-repeat: repeat-y;
 }
 
 .transparent {
@@ -95,12 +93,11 @@ body {
   justify-content: right;
   align-items: center;
   font-size: 1.75rem;
-  background: linear-gradient(.25turn, black, 60%, rgb(80, 80, 80));
-  width: 100%;
+  background: linear-gradient(.25turn, black, #424242, black, #424242);
+  background-size: 300% 100%;  width: 100%;
   padding: 0;
   padding-right: 2rem;
-  animation: 2s ease-in 1s 1 fadeIn;
-  animation-fill-mode: backwards;
+  animation: slide 20s infinite linear;
   z-index: 1;
 }
 
@@ -124,9 +121,11 @@ body {
 
 #main {
   color: #A2D0F9;
-  background: linear-gradient(.25turn, black, 60%, rgb(80, 80, 80));
+  background: linear-gradient(.25turn, black, #424242, black, #424242);
+  background-size: 300% 100%;
   height: 100vh;
   padding: 1rem 4rem;
+  animation: slide 20s infinite linear;
 }
 
 h1 {
