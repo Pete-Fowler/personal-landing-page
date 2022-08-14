@@ -23,12 +23,11 @@ contactBtn.addEventListener('click', () => {
 
 // Parallax scroll effect
 const background = document.querySelector('#background');
-
 const parallax = () => {
   const { scrollY } = window;
   background.style.top = (scrollY * -.4) + 'px';
 }
-window.addEventListener('scroll', parallax)
+window.addEventListener('scroll', parallax);
 })();
 
 
