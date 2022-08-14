@@ -75,15 +75,16 @@ body {
 #background {
   position: fixed;
   z-index: -1;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  height: 200vh;
+  top: 800px;
   background-image: url('./images/pexels-mikhail-nilov-8108726.jpg');
   background-size: cover;
 }
 
 .transparent {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   opacity: 0;
 }
 
@@ -144,6 +145,7 @@ h2 {
 }
 
 h3 {
+  position: relative;
   font-size: 1.7rem;
   font-family: roboto;
   animation: 2s ease-in 1s 1 slideInFromBottom;

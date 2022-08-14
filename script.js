@@ -1,3 +1,5 @@
+
+const listeners = (() => {
 // Header nav button scroll functionality
 const topBtn = document.querySelector('#top-btn');
 topBtn.addEventListener('click', () => {
@@ -7,7 +9,7 @@ const projectsBtn = document.querySelector('#projects-btn');
 projectsBtn.addEventListener('click', () => {
   document.getElementById("projects").scrollIntoView({behavior: 'smooth'})});
 
-const bioBtn = document.querySelector('#bio-btn');
+  const bioBtn = document.querySelector('#bio-btn');
 bioBtn.addEventListener('click', () => {
   document.getElementById("bio").scrollIntoView({behavior: 'smooth', block: 'center'})});
 
@@ -18,4 +20,20 @@ linksBtn.addEventListener('click', () => {
 const contactBtn = document.querySelector('#contact-btn');
 contactBtn.addEventListener('click', () => {
   document.getElementById("contact").scrollIntoView({behavior: 'smooth', block: 'center'})});
+
+// Parallax scroll effect
+const background = document.querySelector('#background');
+const heroText = document.querySelectorAll('.scroll');
+const parallax = () => {
+  const { scrollY } = window;
+  background.style.top = (scrollY * -.2) + 'px';
+  heroText.forEach(x => {
+    x.style.right = (scrollY * .6) + 'px';
+    x.style.top = (scrollY * .6) + 'px';
+  });
+
+}
+window.addEventListener('scroll', parallax)
+})();
+
 
