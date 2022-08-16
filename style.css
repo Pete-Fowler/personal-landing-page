@@ -95,6 +95,7 @@ body {
   font-size: 1.75rem;
   background: linear-gradient(.25turn, black, #505050, rgba(111, 167, 111, .6), #505050, black, #505050);
   background-size: 500% 100%;
+  width: 100%;
   padding: 0;
   padding-right: 2rem;
   animation: slide 20s infinite linear;
