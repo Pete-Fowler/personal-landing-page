@@ -92,7 +92,6 @@ body {
   display: flex;
   justify-content: right;
   align-items: center;
-  font-size: 1.75rem;
   background: linear-gradient(.25turn, black, #505050, rgba(111, 167, 111, 0), black, #505050);
   background-size: 400% 100%;
   width: 100%;
@@ -103,11 +102,11 @@ body {
 }
 
 .nav-btn {
-  font-size: 1.25rem;
+  font-size: 1.5vw;
   font-weight: 700;
   appearance: none;
   height: 100%;
-  width: 100px;
+  width: 10vw;
   border: none;
   color: #A2D0F9;
   background: rgba(0, 0, 0, 0);
@@ -135,21 +134,21 @@ h1 {
   font-family: ubuntu-mono;
   color: #57ACF7;
   text-shadow: 2px 2px 3px gray;
-  font-size: 7rem;
+  font-size: 10vw;
   font-weight: 900;
 }
 
 h2 {
   animation: 2s ease-out .5s 1 slideInFromLeft;
   animation-fill-mode: backwards;
-  font-size: 3.5rem;
+  font-size: 5vw;
   position: relative;
   left: 1rem;
 }
 
 h3 {
   position: relative;
-  font-size: 1.7rem;
+  font-size: 2vw;
   font-family: roboto;
   animation: 2s ease-in 1s 1 slideInFromBottom;
   animation-fill-mode: backwards;
@@ -166,7 +165,7 @@ h3 {
 
  #projects-card {
   color: #A2D0F9;
-  font-size: 1.2rem;
+  font-size: 1.5vw;
   font-weight: 700;
   text-align: center;
   justify-content: start;
@@ -178,13 +177,13 @@ h3 {
  }
 
  .card {
+  font-size: 1.7vw;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: linear-gradient(.25turn, black, 60%, rgb(80, 80, 80));
-  font-size: 1.7rem;
   font-weight: 700;
   color: #57ACF7;
   width: 100%;
@@ -214,7 +213,6 @@ h3 {
   width: 100%;
   height: 100%;
   color: #57ACF7;
-  font-size: 1.7rem;
   font-weight: 700;
   font-family: roboto;
  }
@@ -251,13 +249,13 @@ h3 {
 } 
 
  #bio h3 {
-  font-size: 2rem;
+  font-size: 2.5vw;
   margin: 16px;
   animation: none;
  }
 
  #bio p {
-  font-size: 1.2rem;
+  font-size: 1.5vw;
  }
 
  #links, #contact {
@@ -274,7 +272,7 @@ h3 {
  }
 
 #links h3 {
-  font-size: 2rem;
+  font-size: 2.5vw;
   font-weight: 700;
   margin: 2rem;
   animation: none;
@@ -292,6 +290,60 @@ h3 {
 
 #contact h3 {
   animation: none;
-  font-size: 2rem;
+  font-size: 2.5vw;
   margin-bottom: .5rem;
+}
+
+@media (max-width: 600px) {
+  .nav-btn {
+    font-size: 3vw;
+    width: 15vw;
+  }
+  h1 {
+    font-size: 12vw;
+  }
+  h2 {
+    font-size: 6.5vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  #projects-card {
+    font-size: 5vw;
+  }
+  #projects-card h3 {
+    font-size: 6vw;
+  }
+  .card {
+    font-size: 6vw;
+  }
+  #bio h3 {
+    font-size: 8vw;
+  }
+  #bio p {
+    font-size: 4vw;
+  }
+  #portrait {
+    height: 90px;
+    width: 90px;
+  }
+  #bio {
+    padding: 20px 0px;
+  }
+  #bio-box {
+    padding: 10px;
+    max-width: 95vw;
+  }
+  #links h3 {
+    font-size: 8vw;
+  }
+  #contact h3 {
+    font-size: 8vw;
+  }
+  #contact p {
+    font-size: 7vw;
+  }
+  #background {
+    height: 390vh;
+  }
 }
