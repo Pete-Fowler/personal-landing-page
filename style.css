@@ -97,7 +97,7 @@ body {
   width: 100%;
   padding: 0;
   padding-right: 2rem;
-  animation: slide 15s infinite linear;
+  animation: slide 18s 4s infinite linear;
   z-index: 5;
 }
 
@@ -126,7 +126,7 @@ body {
   height: 100vh;
   width: 100%;
   padding: 1rem 4rem;
-  animation: slide 15s infinite linear;
+  animation: slide 18s 4s infinite linear;
 }
 
 h1 {
