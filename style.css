@@ -195,7 +195,7 @@ h3 {
  }
 
  .card:hover {
-  transform: scale(1.3);
+  transform: scale(1.05) rotate(.7deg);
   transition: .6s;
   z-index: 1;
  }
