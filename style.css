@@ -98,7 +98,7 @@ body {
   padding: 0;
   padding-right: 2rem;
   animation: slide 18s 4s infinite linear;
-  z-index: 5;
+  z-index: 10;
 }
 
 .nav-btn {
@@ -198,15 +198,26 @@ h3 {
  }
 
  .card a {
-  position: absolute;
+  /* position: absolute;
   z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; */
   color: #57ACF7;
   font-weight: 700;
   font-family: roboto;
+ }
+
+ .modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+ }
+
+ .hidden {
+    opacity: 0;
  }
 
  #bio {

@@ -9,7 +9,7 @@ const projectsBtn = document.querySelector('#projects-btn');
 projectsBtn.addEventListener('click', () => {
   document.getElementById("projects").scrollIntoView({behavior: 'smooth'})});
 
-  const bioBtn = document.querySelector('#bio-btn');
+const bioBtn = document.querySelector('#bio-btn');
 bioBtn.addEventListener('click', () => {
   document.getElementById("bio").scrollIntoView({behavior: 'smooth', block: 'center'})});
 
@@ -28,6 +28,20 @@ const parallax = () => {
   background.style.top = (scrollY * -.4) + 'px';
 }
 window.addEventListener('scroll', parallax);
+
+// Card modals
+const modals = document.querySelectorAll('.modal');
+modals.forEach(modal => modal.addEventListener('hover', toggleHidden))
 })();
+
+function toggleHidden(e) {
+  console.log(e.target.classList);
+  if(e.target.classList.includes('hidden')) {
+    e.target.classList.remove('hidden');
+  }
+  else {
+    e.target.classList.add('hidden');
+  }
+}
 
 
