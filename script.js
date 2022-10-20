@@ -31,17 +31,15 @@ window.addEventListener('scroll', parallax);
 
 // Card modals
 const modals = document.querySelectorAll('.modal');
-modals.forEach(modal => modal.addEventListener('hover', toggleHidden))
+modals.forEach(modal => {
+  modal.addEventListener('mouseenter', toggleHidden);
+  modal.addEventListener('mouseleave', toggleHidden);  
+});
 })();
 
 function toggleHidden(e) {
-  console.log(e.target.classList);
-  if(e.target.classList.includes('hidden')) {
-    e.target.classList.remove('hidden');
-  }
-  else {
-    e.target.classList.add('hidden');
-  }
+  console.log(e.target);
+  e.target.classList.toggle('hidden');
 }
 
 
