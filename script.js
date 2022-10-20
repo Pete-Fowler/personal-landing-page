@@ -30,15 +30,14 @@ const parallax = () => {
 window.addEventListener('scroll', parallax);
 
 // Card modals
-const modals = document.querySelectorAll('.modal');
-modals.forEach(modal => {
-  modal.addEventListener('mouseenter', toggleHidden);
-  modal.addEventListener('mouseleave', toggleHidden);  
+const cards = document.querySelectorAll('.card');
+cards.forEach(card => {
+  card.addEventListener('mouseenter', toggleHidden);
+  card.addEventListener('mouseleave', toggleHidden);  
 });
 })();
 
 function toggleHidden(e) {
-  console.log(e.target);
   e.target.classList.toggle('hidden');
 }
 
