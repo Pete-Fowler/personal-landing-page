@@ -163,14 +163,6 @@ h3 {
   background: whitesmoke;
 }
 
- #projects-card {
-  color: #A2D0F9;
-  font-size: 1.5vw;
-  font-weight: 700;
-  text-align: center;
-  justify-content: start;
- }
-
  #projects-card h3 {
   animation: none;
   color: #57ACF7;
