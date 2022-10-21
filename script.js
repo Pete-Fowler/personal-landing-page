@@ -38,7 +38,8 @@ cards.forEach(card => {
 })();
 
 function toggleHidden(e) {
-  e.target.classList.toggle('hidden');
+  const modal = e.target.querySelector('.modal');
+  modal.classList.toggle('hidden');
 }
 
 
