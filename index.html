@@ -1,107 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Landing Page</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
-</head>
-<body>
-  <div id="background"></div>
-  <div id="header">
-    <button id='top-btn' class="nav-btn">Top</button>
-    <button id='projects-btn' class="nav-btn">Projects</button>
-    <button id='bio-btn' class="nav-btn">Bio</button>
-    <button id='links-btn' class="nav-btn">Links</button>
-    <button id='contact-btn' class="nav-btn">Contact</button>
-  </div>
-  <div id="main">
-    <h1>Pete Fowler</h1>
-    <h2 class="scroll">Software Engineer</h2>
-    <h3>Front end: JavaScript | React | TypeScript</h3>
-    <h3>Back end: Ruby | Rails | SQLite | PostgreSQL</h3>
-  </div>
-  <div class="transparent"></div>
-  <div id="projects">
-    <div class="card">
-      Battleship
-      <img src="./images/battleship.jpg" alt="Website screenshot">
-      <div class="modal hidden">
-        <a href="https://pete-fowler.github.io/battleship/">Live Page</a>
-        <a href="https://github.com/Pete-Fowler/battleship">GitHub Page</a>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Landing Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="header">
+      <button id="top-btn" class="nav-btn">Top</button>
+      <button id="projects-btn" class="nav-btn">Projects</button>
+      <button id="bio-btn" class="nav-btn">Bio</button>
+      <button id="links-btn" class="nav-btn">Links</button>
+      <button id="contact-btn" class="nav-btn">Contact</button>
     </div>
-    <div class="card">
-      Yelp Clone
-        <img src="./images/yelp.jpg" alt="Website screenshot">
+    <div id="main">
+      <h1>Pete Fowler</h1>
+      <h2 class="scroll">Software Engineer</h2>
+      <h3>Front end: JavaScript | React | TypeScript</h3>
+      <h3>Back end: Ruby | Rails | SQLite | PostgreSQL</h3>
+    </div>
+    <div class="transparent"></div>
+    <div id="projects">
+      <div class="card">
+        Weather to Climb
+        <img src="./images/weathertoclimb.jpg" alt="Website screenshot" />
+        <div class="modal hidden">
+          <a href="https://weathertoclimb.herokuapp.com/">Live Page</a>
+          <a href="https://github.com/Pete-Fowler/Weathertoclimb"
+            >GitHub Page</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        Battleship
+        <img src="./images/battleship.jpg" alt="Website screenshot" />
+        <div class="modal hidden">
+          <a href="https://pete-fowler.github.io/battleship/">Live Page</a>
+          <a href="https://github.com/Pete-Fowler/battleship">GitHub Page</a>
+        </div>
+      </div>
+      <div class="card">
+        Yelp Clone
+        <img src="./images/yelp.jpg" alt="Website screenshot" />
         <div class="modal hidden">
           <a href="https://yelpclone.petefowler.dev/">Live Page</a>
-          <a href="https://github.com/Pete-Fowler/yelp-clone-backend">GitHub Repo</a>
-        </div>  
-    </div>
-    <div class="card">
-      Gregslist
-      <img src="./images/gregslist.jpg" alt="Website screenshot">
-      <div class="modal hidden">
-        <a href="https://gregslist.onrender.com/">Live Page</a>
-        <a href="https://github.com/Pete-Fowler/gregslist">GitHub Page</a>
+          <a href="https://github.com/Pete-Fowler/yelp-clone-backend"
+            >GitHub Repo</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        Gregslist
+        <img src="./images/gregslist.jpg" alt="Website screenshot" />
+        <div class="modal hidden">
+          <a href="https://gregslist.onrender.com/">Live Page</a>
+          <a href="https://github.com/Pete-Fowler/gregslist">GitHub Page</a>
+        </div>
+      </div>
+      <div class="card">
+        Herbivorous
+        <img src="./images/herbivorous.jpg" alt="Website screenshot" />
+        <div class="modal hidden">
+          <a href="https://herbivorous.petefowler.dev/">Live Page</a>
+          <a href="https://github.com/Pete-Fowler/herbivorous">GitHub Page</a>
+        </div>
+      </div>
+      <div class="card">
+        Todo List
+        <img src="./images/todo list.jpg" alt="Website screenshot" />
+        <div class="modal hidden">
+          <a href="https://pete-fowler.github.io/todo-list/">Live Page</a>
+          <a href="https://github.com/Pete-Fowler/todo-list">GitHub Page</a>
+        </div>
       </div>
     </div>
-    <div class="card">
-      Herbivorous
-      <img src="./images/herbivorous.jpg" alt="Website screenshot">
-      <div class="modal hidden">
-        <a href="https://herbivorous.petefowler.dev/">Live Page</a>
-        <a href="https://github.com/Pete-Fowler/herbivorous">GitHub Page</a>
+    <div class="transparent"></div>
+    <div id="bio">
+      <div id="bio-box">
+        <h3>Bio</h3>
+        <p>
+          <img
+            src="./images/portrait.jpg"
+            id="portrait"
+            alt="Portrait photo"
+          />I love building things, and the intellectual challenges and ongoing
+          learning required in this field. I am currently building full-stack
+          web apps through the Flatiron School and The Odin Project curriculums
+          using JavaScript, React, Ruby, and Ruby on Rails. I've obtained strong
+          problem-solving, communication, and collaboration skills through
+          teaching myself web development, plus previous experience in music,
+          journalism, private investigation, and healthcare. I am a dedicated
+          rock climber and runner from Colorado.
+        </p>
       </div>
     </div>
-    <div class="card">
-      Todo List
-      <img src="./images/todo list.jpg" alt="Website screenshot">
-      <div class="modal hidden">
-        <a href="https://pete-fowler.github.io/todo-list/">Live Page</a>
-        <a href="https://github.com/Pete-Fowler/todo-list">GitHub Page</a>
+    <div id="links">
+      <h3 id="links-h">Links</h3>
+      <div id="icons">
+        <a href="https://github.com/Pete-Fowler">
+          <img src="./images/GitHub-Mark-120px-plus.png" alt="Github"
+        /></a>
+        <a href="https://www.linkedin.com/in/pete-fowler/">
+          <img src="./images/LI-In-Bug.png" alt="LinkedIn"
+        /></a>
+        <a href="https://blog.petefowler.dev/" alt="Blog">
+          <img
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1611902473383/CDyAuTy75.png?auto=compress"
+            alt="Blog"
+          />
+        </a>
       </div>
     </div>
-    <div class="card">
-      Nasa Image Navigator
-      <img src="./images/nasa.jpg" alt="Website screenshot">
-      <div class="modal hidden">
-        <a href="https://pete-fowler.github.io/phase-1-nasa-navigator/">Live Page</a>
-        <a href="https://github.com/Pete-Fowler/phase-1-nasa-navigator">GitHub Page</a>
-      </div>
-    </div>
-  </div>
-  <div class="transparent"></div>
-  <div id="bio">
-    <div id="bio-box">
-      <h3>Bio</h3>
+    <div id="contact">
+      <h3 id="contact-h">Contact</h3>
       <p>
-        <img src="./images/portrait.jpg" id='portrait' alt="Portrait photo">I love building things, and the intellectual challenges and ongoing learning required in this field. I am currently building full-stack web apps through the Flatiron School and The Odin Project curriculums using JavaScript, React, Ruby, and Ruby on Rails. I've obtained strong problem-solving, communication, and collaboration skills through teaching myself web development, plus previous experience in music, journalism, private investigation, and healthcare. I am a dedicated rock climber and runner from Colorado.
+        fow<!--abc@def.com-->ler.pe<!--@abc.com-->te@<!--pete@abcdef.com-->gmail.com
       </p>
-
     </div>
-    
-  </div>
-  <div id="links">
-    <h3 id="links-h">Links</h3>
-    <div id="icons">
-      <a href="https://github.com/Pete-Fowler">
-        <img src="./images/GitHub-Mark-120px-plus.png" alt="Github"></a>
-      <a href="https://www.linkedin.com/in/pete-fowler/">
-        <img src="./images/LI-In-Bug.png" alt="LinkedIn"></a>
-      <a href="https://blog.petefowler.dev/" alt="Blog">
-        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1611902473383/CDyAuTy75.png?auto=compress" alt="Blog">
-      </a>
-    </div>
-  </div>
-  <div id="contact">
-    <h3 id="contact-h">Contact</h3>
-    <p>fow<!--abc@def.com-->ler.pe<!--@abc.com-->te@<!--pete@abcdef.com-->gmail.com</p>
-    
-  </div>
-  <div class="transparent"></div>
-</body>
+    <div class="transparent"></div>
+  </body>
 </html>
