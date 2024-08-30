@@ -1,4 +1,4 @@
-This is a developer landing page at <a href="https://petefowler.dev">petefowler.dev<a> 
+This is a developer landing page.
 
 Built with vanilla JavaScript, HTML, and CSS.
 
